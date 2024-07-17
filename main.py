@@ -1,6 +1,8 @@
 def main(num):
     result = num ** 2
-    return result
+
+    with open("output.txt", "w") as file:
+            file.write(str(result))
 
 
 if __name__ == "__main__":
